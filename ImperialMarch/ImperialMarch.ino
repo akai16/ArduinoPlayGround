@@ -5,8 +5,9 @@
 
 //Pins
 const int buttonPin = 12;
-const int piezzoPin = 9;
+const int piezzoPin = 6;
 
+// Variables
 int buttonStatus = 0;
 bool isPlaying = false;
 
@@ -97,7 +98,7 @@ void imperial_march() {
 void setup() {
   Serial.begin(9600);
   
-  pinMode(buttonPin, INPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
   pinMode(piezzoPin, OUTPUT);
 
 }
@@ -106,7 +107,7 @@ void loop() {
   buttonStatus = digitalRead(buttonPin);
   Serial.println(buttonStatus);
 
-  if (buttonStatus == HIGH && isPlaying == false) {
+  if (buttonStatus == LOW && isPlaying == false) {
     isPlaying = true;
 
     imperial_march();
