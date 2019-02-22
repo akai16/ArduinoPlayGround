@@ -1,3 +1,7 @@
+/* Toca o começo da Marcha Imperial ao pressionar
+ *  um botão. 
+ *  Usa um Piezzo Buzzer
+*/
 
 //Pins
 const int buttonPin = 12;

@@ -1,3 +1,5 @@
+// Alarme fotosensivel que dispara na presença de Luz
+
 int buzzer_pin = 2;
 int ldr_pin = A0;
 int ldr_value = 0;

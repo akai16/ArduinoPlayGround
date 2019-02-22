@@ -1,3 +1,6 @@
+//Acende e apaga um LED conforme o
+// pressionamento de um botão
+
 const int buttonPin = 7;
 const int ledPin = 2;
 

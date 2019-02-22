@@ -1,3 +1,6 @@
+//Imprime a distancia medida pelo 
+//Sensor Ultrasonico HCSR04
+
 #include <HCSR04.h>
 
 int triggerPin = 9;
