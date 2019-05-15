@@ -71,22 +71,28 @@ void sing(Note note, float time) {
 
 
 void imperial_march() {
-      
+
+    //1 Compasso
     sing(LA5,1);
     sing(LA5,1);
     sing(LA5,1);
     sing(F5,0.5);
     sing(C6,0.5);
+
+    //2 Compasso
     sing(LA5,1);
     sing(F5,0.5);
     sing(C6,0.5);
     sing(LA5,2);
 
+    //3 Compasso
     sing(E6,1);
     sing(E6,1);
     sing(E6,1);
     sing(F6,0.5);
     sing(C6,0.5);
+
+    //4 Compasso
     sing(bA5,1);
     sing(F5,0.5);
     sing(C6,0.5);
@@ -109,9 +115,9 @@ void loop() {
 
   if (buttonStatus == LOW && isPlaying == false) {
     isPlaying = true;
-
-    imperial_march();
     
+    imperial_march();
+   
     isPlaying = false;
   }
 
